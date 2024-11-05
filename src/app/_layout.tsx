@@ -5,6 +5,8 @@ export default function RootLAyout(){
     return (
         <Stack>
         <Stack.Screen name="index" options={{title: "Meditation"}} />
+        <Stack.Screen name="meditation/[id]" options={{headerShown:false, animation:'slide_from_bottom'}} />
+
         </Stack>
         )
      ;
