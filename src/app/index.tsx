@@ -11,6 +11,8 @@ export default function HomeScreen() {
     return (
         <FlatList
             data={meditations}
+            className="bg-white"
+            contentContainerClassName="gap-5 p-3 "
             renderItem={({item})=> <MeditationListComponent meditation={item}/>}
         />
   )
