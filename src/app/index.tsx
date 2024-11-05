@@ -1,7 +1,14 @@
-import { Text } from "react-native";
+import { Text, View } from "react-native";
+import { meditations } from "../data";
+
+
+const meditation = meditations[0];
 
 export default function HomeScreen() {
   return (
-    <Text className="font-bold text-4xl bg-red-500 p-10 ">Index</Text>
+    <View className="p-5">
+
+        <Text className="font-semibold text-2xl  ">{meditation.title}</Text>
+    </View>
   )
 }
