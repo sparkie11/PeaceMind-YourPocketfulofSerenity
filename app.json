@@ -20,7 +20,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.gautamsparkiewise.headspaceexpo"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -29,6 +34,11 @@
     "plugins": [
       "expo-router",
       "expo-audio"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "13422154-17fd-4c1b-8961-9d045f1b65d4"
+      }
+    }
   }
 }
