@@ -24,7 +24,7 @@ export default function MeditationDetails() {
 
                 <FontAwesome onPress={()=>router.back()}  className="  right-4 z-10 " name="close" size={24} color="black" />
             </View>
-            <Text className="text-3xl ">  {meditation?.title}</Text>
+            <Text className="text-3xl mt-10 text-center font-semibold ">  {meditation?.title}</Text>
         
         </SafeAreaView>
     )
