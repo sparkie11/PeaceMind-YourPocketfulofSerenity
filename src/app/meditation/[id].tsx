@@ -1,5 +1,6 @@
 import { meditations } from "@/data";
 import { FontAwesome, FontAwesome6 } from "@expo/vector-icons";
+import Slider from "@react-native-community/slider";
 import { router, useLocalSearchParams } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
@@ -40,7 +41,17 @@ export default function MeditationDetails() {
                     <FontAwesome name="cog" size={24} color="#3A3937" />
                 </View>
                 <View>
-                    <View className="bg-zinc-400 h-2"/>
+                    <Slider
+                        style={{width: 200, height: 20}}
+                        minimumValue={0}
+                        maximumValue={1}
+                        minimumTrackTintColor="#FFFFFF"
+                        maximumTrackTintColor="#000000"
+                        />
+                </View>
+                <View className="flex-row justify-between">
+                    <Text> 0.3.14</Text>
+                    <Text> 4.3.14</Text>
                 </View>
             </View>
         
